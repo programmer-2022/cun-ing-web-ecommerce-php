@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<title>E-Shoppe - Login</title>
+
+		<!-- Favicon -->
+		<link href="img/favicon.ico" rel="icon" />
+
+		<!-- Google Web Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Font Awesome -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Libraries Stylesheet -->
+		<link
+			href="lib/owlcarousel/assets/owl.carousel.min.css"
+			rel="stylesheet"
+		/>
+		<!-- Customized Bootstrap Stylesheet -->
+		<link href="css/style.css" rel="stylesheet" />
+
+		<!-- Customized Bootstrap Stylesheet -->
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- Topbar Start -->
+		<div class="container-fluid">
+			<div class="row bg-secondary py-2 px-xl-5">
+				<div class="col-lg-6 d-none d-lg-block">
+					<div class="d-inline-flex align-items-center">
+						<a class="text-dark" href="">E-Shopper</a>
+						<span class="text-muted px-2">|</span>
+						<a class="text-dark" href="">Bogota DC</a>
+					</div>
+				</div>
+				<div class="col-lg-6 text-center text-lg-right">
+					<div class="d-inline-flex align-items-center">
+						<a class="text-dark px-2" href="">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a class="text-dark px-2" href="">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a class="text-dark px-2" href="">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+						<a class="text-dark px-2" href="">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a class="text-dark pl-2" href="">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row align-items-center py-3 px-xl-5">
+				<div class="col-lg-3 d-none d-lg-block">
+					<a href="index.php" class="text-decoration-none">
+						<h1 class="m-0 display-5 font-weight-semi-bold">
+							<span
+								class="text-primary font-weight-bold border px-3 mr-1"
+								>E</span
+							>Shopper
+						</h1>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Topbar End -->
+		<section class="vh-100 bg-light">
+			<div class="container-fluid h-custom">
+				<div
+					class="row d-flex justify-content-center align-items-center h-100"
+				>
+					<div class="col-md-9 col-lg-6 col-xl-5">
+						<img
+							src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+							class="img-fluid"
+							alt="Sample image"
+						/>
+					</div>
+					<div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+						<form
+							name="myFormLogin"
+							id="myFormLogin"
+							novalidate="novalidate"
+							method="POST"
+							action="check_user.php"
+						>
+							<div
+								class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start"
+							>
+								<p class="lead mb-0 me-3 text-dark">Login</p>
+							</div>
+							<div
+								class="divider d-flex align-items-center my-4"
+							></div>
+							<!-- Username input -->
+							<div class="mb-3">
+								<label class="text-dark" for="username"
+									>Username</label
+								>
+								<input
+									type="email"
+									id="username"
+									name="username"
+									class="form-control form-control-lg text-dark"
+									autofocus
+								/>
+							</div>
+							<!-- Password input -->
+							<div class="mb-3">
+								<label class="text-dark" for="password"
+									>Password</label
+								>
+								<input
+									type="password"
+									id="password"
+									name="password"
+									class="form-control form-control-lg text-dark"
+								/>
+							</div>
+							<div class="d-grid">
+								<button
+									class="btn btn-primary w-100"
+									type="submit"
+								>
+									Login
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
