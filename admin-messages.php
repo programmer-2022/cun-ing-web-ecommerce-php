@@ -8,7 +8,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>E-Shopper - Dashboard</title>
+    <title>E-Shopper - Messages</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
@@ -129,7 +129,7 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Managment Users</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Managment Messages</h1>
                 </div>
                 <!-- /.container-fluid -->
             </div>

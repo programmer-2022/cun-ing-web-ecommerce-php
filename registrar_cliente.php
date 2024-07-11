@@ -26,8 +26,8 @@ try {
     $stmt->execute();
 
     echo "<script>
-            alert('¡Mensaje enviado correctamente!');
-            window.location.href = 'contact.php';
+            alert('Cotizacion enviada correctamente, te contactaremos en el transcurso del dia!');
+            window.location.href = 'products.php';
         </script>";
 
 } catch(PDOException $e) {

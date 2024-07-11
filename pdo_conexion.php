@@ -1,10 +1,18 @@
 <?php
 class Database {
     
-    private $host = "localhost";
-    private $db_name = "ecommerce_cun_db";
-    private $username = "root";
-    private $password = "";
+    //LocalHost
+    // private $host = "localhost";
+    // private $db_name = "ecommerce_cun_db";
+    // private $username = "root";
+    // private $password = "";
+    // private $conn;
+
+    //Production
+    private $host = "sql212.ezyro.com";
+    private $db_name = "ezyro_36886222_eccomerce_db";
+    private $username = "ezyro_36886222";
+    private $password = "2e9129a";
     private $conn;
 
     public function getConnection() {
