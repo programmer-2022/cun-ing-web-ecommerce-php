@@ -116,67 +116,63 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">
-                                Managment Customer Messages
+                                Customer Details
                             </h6>
                         </div>
-
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Customer Name</th>
-                                            <th>Email</th>
-                                            <th>Subject</th>
-                                            <th>Message</th>
-                                            <th>CreatedAt</th>
-                                            <th>Actions</th>
-                                        </tr>
-
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Customer Name</th>
-                                            <th>Email</th>
-                                            <th>Subject</th>
-                                            <th>Message</th>
-                                            <th>CreatedAt</th>
-                                            <th>Actions</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <?php
-											include 'obtener_clientes.php';
-											
-											if (!empty($contactos)) {
-												foreach ($contactos as $contacto) {
-													echo "<tr>													
-														<td class='contact-id'>{$contacto['id']}</td>
-														<td class='contact-name'>{$contacto['name']}</td>
-														<td class='contact-email'>{$contacto['email']}</td>
-														<td class='contact-subject'>{$contacto['subject']}</td>
-														<td class='contact-message'>{$contacto['message']}</td>
-														<td class='contact-createdAt'>{$contacto['created_at']}</td>
-														<td>
-															<div class='d-flex justify-content-around'>
-																<button class='btn btn-outline-danger mr-2 btn-delete' data-id='{$contacto['id']}' data-toggle='tooltip' data-placement='top' title='Delete'><i class='fas fa-trash-alt'></i></button>
-																<button class='btn btn-outline-primary mr-2 btn-details' data-id='{$contacto['id']}' data-toggle='tooltip' data-placement='top' title='Details'><i class='fas fa-edit'></i></button>															
-															</div>
-														</td>
-													</tr>";
-												}
-											} else {
-												echo "<tr><td colspan='7'>No se encontraron Mensajes.</td></tr>";
-											}
-											?>
-                                    </tbody>
-                                </table>
+                        <div class="card-header py-3">
+                            <h6>
+                                <strong>ID</strong>
+                            </h6>
+                            <div class="mt-2">
+                                <p id="contact-id"></p>
                             </div>
+                        </div>
+                        <div class="card-header py-3">
+                            <h6>
+                                <strong>Name</strong>
+                            </h6>
+                            <div class="mt-2">
+                                <p id="contact-name"></p>
+                            </div>
+                        </div>
+                        <div class="card-header py-3">
+                            <h6>
+                                <strong>Email</strong>
+                            </h6>
+                            <div class="mt-2">
+                                <p id="contact-email"></p>
+                            </div>
+                        </div>
+                        <div class="card-header py-3">
+                            <h6>
+                                <strong>Subject</strong>
+                            </h6>
+                            <div class="mt-2">
+                                <p id="contact-subject"></p>
+                            </div>
+                        </div>
+                        <div class="card-header py-3">
+                            <h6>
+                                <strong>Message</strong>
+                            </h6>
+                            <div class="mt-2">
+                                <p id="contact-message"></p>
+                            </div>
+                        </div>
+                        <div class="card-header py-3">
+                            <h6>
+                                <strong>CreatedAt</strong>
+                            </h6>
+                            <div class="mt-2">
+                                <p id="contact-createdAt"></p>
+                            </div>
+                        </div>
+                        <div class="mt-5 card-header py-3">
+                            <a class="btn btn-primary" href="admin-messages.php">Back</a>
                         </div>
                     </div>
                 </div>
@@ -203,8 +199,8 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <script src="js/customer_details.js"></script>
-    <script src="js/delete_customer_message.js"></script>
+    <script src="js/load_customer_details.js"></script>
+
 </body>
 
 </html>

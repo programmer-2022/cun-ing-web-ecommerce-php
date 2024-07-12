@@ -111,27 +111,6 @@
                                     class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo htmlspecialchars($_SESSION['username']); ?></span>
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg" />
                             </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
-                                </a>
-                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -282,13 +261,12 @@
                         enctype="multipart/form-data">
                         <div class="mb-3">
                             <label for="txtProductName" class="form-label">Product Name</label>
-                            <input type="text" class="form-control" id="txtProductName" name="txtProductName"
-                                value="XXX" autofocus required />
+                            <input type="text" class="form-control" id="txtProductName" name="txtProductName" autofocus
+                                required />
                         </div>
                         <div class="mb-3">
                             <label for="txtDescription" class="form-label">Description</label>
-                            <input class="form-control" id="txtDescription" name="txtDescription" value="XXX"
-                                required />
+                            <input class="form-control" id="txtDescription" name="txtDescription" required />
                         </div>
                         <div class="mb-3">
                             <label for="file" class="form-label">Select Image</label>
@@ -296,13 +274,11 @@
                         </div>
                         <div class="mb-3">
                             <label for="txtCategory" class="form-label">Category</label>
-                            <input type="text" class="form-control" id="txtCategory" name="txtCategory" value="XXX"
-                                required />
+                            <input type="text" class="form-control" id="txtCategory" name="txtCategory" required />
                         </div>
                         <div class="mb-3">
                             <label for="txtPrice" class="form-label">Price</label>
-                            <input type="text" class="form-control" id="txtPrice" name="txtPrice" value="70.90"
-                                required />
+                            <input type="text" class="form-control" id="txtPrice" name="txtPrice" required />
                         </div>
                         <button type="submit" name="submit" class="btn btn-primary w-100">Save Changes</button>
                     </form>
